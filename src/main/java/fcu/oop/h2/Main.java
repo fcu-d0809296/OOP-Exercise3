@@ -32,8 +32,9 @@ public class Main {
     System.out.println("Balance:");
     System.out.println(acc1.getBalance());
 
+    scanner.nextLine();
+    
     Account acc2 = new Account();
-
     System.out.println("Name:");
     acc2.setName(scanner.nextLine());
 
