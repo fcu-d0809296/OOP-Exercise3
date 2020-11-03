@@ -62,7 +62,7 @@ public class Account {
   
   /**.*/
   public void setPassword(String password) {
-    if (password.matches("[0-9]*[A-Z]")) {
+    if (password.matches("^.*(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).*$")) {
       this.password = password;
     } else {
       System.out.println("input Error");
